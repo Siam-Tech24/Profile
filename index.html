@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             padding: 0;
             background: linear-gradient(to right bottom, black, rgb(48, 48, 48), rgb(65, 65, 65));
             background-repeat: no-repeat;
-            width: 100vw;
-            height: 100vh;
-            box-sizing: border-box;
+            background-attachment: fixed;
+            width: 100%;
+            min-height: 100vh;
         }
 
         header nav {
@@ -22,6 +28,8 @@
             background: linear-gradient(to right bottom, blue, rgb(0, 162, 255), blue);
             padding: 0.9rem;
             color: rgb(255, 255, 255);
+            width: 100%;
+            align-items: center;
         }
 
         .sidetoggle span {
@@ -75,9 +83,9 @@
             left: 0;
         }
 
-        main {
-            position: fixed;
-            width: 100vw;
+        #sidecontainer {
+            position: absolute;
+            width: 100%;
             box-sizing: border-box;
         }
 
@@ -154,35 +162,37 @@
         </nav>
     </header>
     <main>
-        <aside class="sidebar" id="sidebar">
-            <details id="skills">
-                <summary>Skills</summary>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Responsive Layout</li>
-                    <li>Reactive Elements</li>
-                </ul>
-            </details>
-            <details id="services">
-                <summary>Offered Services: </summary>
-                <ul>
-                    <li>Modern UI Design</li>
-                    <li>Responsive Web Design</li>
-                    <li>Portfolio Websites</li>
-                    <li>Business Websites</li>
-                    <li>Interactive Frontend Features</li>
-                    <li>Website Redesign</li>
-                </ul>
-            </details>
-            <details id="contacts">
-                <summary>Contacts</summary>
-                <ul>
-                    <li>Phone: 01310104174</li>
-                    <li>Whatsapp: 01882614288</li>
-                </ul>
-            </details>
-        </aside>
+        <div id="sidecontainer">
+            <aside class="sidebar" id="sidebar">
+                <details id="skills">
+                    <summary>Skills</summary>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive Layout</li>
+                        <li>Reactive Elements</li>
+                    </ul>
+                </details>
+                <details id="services">
+                    <summary>Offered Services: </summary>
+                    <ul>
+                        <li>Modern UI Design</li>
+                        <li>Responsive Web Design</li>
+                        <li>Portfolio Websites</li>
+                        <li>Business Websites</li>
+                        <li>Interactive Frontend Features</li>
+                        <li>Website Redesign</li>
+                    </ul>
+                </details>
+                <details id="contacts">
+                    <summary>Contacts</summary>
+                    <ul>
+                        <li>Phone: 01310104174</li>
+                        <li>Whatsapp: 01882614288</li>
+                    </ul>
+                </details>
+            </aside>
+        </div>
         <article>
             <div id="pic_container">
                 <figure>
@@ -193,11 +203,13 @@
                 <h1>Hi, I'm Siam</h1>
                 <h2>A Frontend Web Developer</h2>
                 <big>
-                    <p>And someone you can trust for your personal and commercial websites. I believe a website should
+                    <p>And someone you can trust for your personal and commercial websites. I believe a website
+                        should
                         be
                         more than just a collection of pages—it should represent your vision, your brand, and your
                         goals.
-                        That's why I focus on building modern, responsive, and visually appealing websites that deliver
+                        That's why I focus on building modern, responsive, and visually appealing websites that
+                        deliver
                         a
                         smooth experience across all devices.
                     </p>
