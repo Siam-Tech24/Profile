@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +60,7 @@
         }
 
         .sidebar {
-            height: 100vh;
+            min-height: 100vh;
             width: 30vw;
             min-width: fit-content;
             left: -100vw;
@@ -110,11 +111,11 @@
             flex-wrap: wrap;
             align-items: center;
         }
-
+        
         #pic_container {
             display: block;
         }
-
+        
         article img {
             height: 300px;
             width: 300px;
@@ -122,14 +123,15 @@
             box-shadow: 0 0 15px white, 0 0 15px white;
             float: left;
         }
-
+        
         #description p {
             display: inline;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-
+        
         #description {
             flex: 1;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         footer {
@@ -160,10 +162,40 @@
             margin: 5px 0;
         }
 
-        .contact_links{
-            color: blue;
+        .social_media_container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .social_media_buttons {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 0.9rem;
+            border-radius: 34px;
+            border: 2px solid black;
             text-decoration: none;
-            margin-top:3px
+            transition: 0.3s;
+        }
+
+        .social_media_buttons:hover {
+            background: white;
+            color: black;
+        }
+
+        .youtube_button {
+            color: black;
+            background: linear-gradient(to right bottom, red, #ff9b9b, red);
+        }
+
+        .tiktok_button {
+            background: linear-gradient(to right bottom, black, rgb(59, 59, 59), black);
+            color: white;
+        }
+
+        .facebook_button {
+            background: linear-gradient(to right bottom, blue, rgb(105, 105, 255), blue);
+            color: white;
         }
     </style>
 </head>
@@ -177,7 +209,7 @@
                 <span></span>
             </button>
             <h1>
-                <i>Siam-Tech</i>
+                <i>Siam-Tech24</i>
             </h1>
         </nav>
     </header>
@@ -209,14 +241,20 @@
                     <ul>
                         <li>Phone: 01310104174</li>
                         <li>Whatsapp: 01882614288</li>
-                        <li>Facebook: <a href="https://www.facebook.com/share/18vKvK6JKa/" id="facebook_button"
-                                class="contact_links" class="contact_links">Siam-Tech24</a></li>
-                        <li>TikTok: <a href="https://vm.tiktok.com/ZS9jeKvKjvaDe-fYY8e/"
-                                class="contact_links">Siam-Tech24</a></li>
-                        <li>YouTube: <a href="https://youtube.com/@siam-tech24?si=ejUunJj-HBEXbL2T"
-                                class="contact_links">Siam-Tech24</a></li>
                     </ul>
                 </details>
+                <div style="margin-top: 3rem;">
+                    <hr>
+                    <h1>Social media: </h1>
+                    <div class="social_media_container">
+                        <a href="https://youtube.com/@siam-tech24?si=ejUunJj-HBEXbL2T"
+                            class="social_media_buttons youtube_button">YouTube</a>
+                        <a href="https://vm.tiktok.com/ZS9jeKvKjvaDe-fYY8e/"
+                            class="social_media_buttons tiktok_button">Tik Tok</a>
+                        <a href="https://www.facebook.com/share/18vKvK6JKa/"
+                            class="social_media_buttons facebook_button">Facebook</a>
+                    </div>
+                </div>
             </aside>
         </div>
         <article>
