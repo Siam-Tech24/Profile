@@ -128,7 +128,7 @@ article img {
 #description {
     flex: 1;
     font-family: Arial, Helvetica, sans-serif;
-    animation: fadein 1s 1;
+    animation: fadein 1.5s 1;
 }
 
 @keyframes fadein {
