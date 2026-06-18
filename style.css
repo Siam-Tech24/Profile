@@ -39,7 +39,7 @@ header nav {
     cursor: pointer;
     background: none;
     border: 2px solid transparent;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
     border-radius: 5px;
     transform: rotate(0deg);
 }
