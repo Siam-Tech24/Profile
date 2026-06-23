@@ -23,6 +23,7 @@ header nav {
     width: 100%;
     min-width: fit-content;
     align-items: center;
+    z-index: 999;
 }
 
 
@@ -69,6 +70,7 @@ header nav {
     padding: 0.9rem;
     box-sizing: border-box;
     top: 0;
+    z-index: 998;
 }
 
 .sidebar details {
@@ -82,6 +84,16 @@ header nav {
     border-radius: 5px;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.personal_projects {
+    color: rgb(49, 49, 49);
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.projects_list {
+    list-style: none;
 }
 
 .sidebar details:hover {
@@ -146,13 +158,16 @@ article img {
 footer {
     display: flex;
     margin-top: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
 }
 
-#contacts_button {
+.contacts_button {
     color: silver;
     background-color: blue;
     font-weight: bolder;
-    margin: auto;
     padding: 10px 1rem;
     border-radius: 34px;
     box-shadow: 0 0 15px blue, 0 0 15px blue;
@@ -161,11 +176,22 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     margin-bottom: 20px;
+    width: max-content;
 }
 
-#contacts_button:hover {
-    padding: 10px 3rem;
+.contacts_button:hover {
+    transform: scaleX(1.5);
     box-shadow: 0 0 40px blue, 0 0 40px blue;
+}
+
+
+.contacts_button_text {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.contacts_button:hover .contacts_button_text {
+    transform: scaleX(0.666);
 }
 
 #description li {
@@ -179,7 +205,7 @@ footer {
     gap: 5px;
 }
 
-.social_media_buttons {
+.sidebar .social_media_buttons {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0.9rem;
     border-radius: 34px;
