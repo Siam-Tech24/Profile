@@ -53,6 +53,21 @@
                         <li>Whatsapp: 01882614288</li>
                     </ul>
                 </details>
+                <details id="allprojects">
+                    <summary>Projects</summary>
+                    <ul>
+                        <li class="projects_list">
+                            <details>
+                                <summary>Personal Projects</summary>
+                                <ul>
+                                    <li class="personal_projects">
+                                        <a href="https://siam-tech24.github.io/PawMart/">PawMart</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
                 <div style="margin-top: 3rem;">
                     <hr>
                     <h1>Social media: </h1>
@@ -83,16 +98,21 @@
                         more than just a collection of pages—it should represent your vision, your brand, and your
                         goals.
                         That's why I focus on building modern, responsive, and visually appealing websites that
-                        deliver
-                        a
-                        smooth experience across all devices.
+                        deliver a smooth experience across all devices.
                     </p>
                 </big>
             </div>
         </article>
         <footer>
             <button class="contacts_button" id="contacts_button">
-                Contacts
+                <span class="contacts_button_text">
+                    Contacts
+                </span>
+            </button>
+            <button class="contacts_button" id="projects_button">
+                <span class="contacts_button_text" id="projects">
+                    Projects
+                </span>
             </button>
         </footer>
     </main>
@@ -103,6 +123,8 @@
         const contacts = document.getElementById("contacts");
         const services = document.getElementById("services");
         const skills = document.getElementById("skills");
+        const projects = document.getElementById("projects");
+        const allprojects = document.getElementById("allprojects");
 
 
         sidetoggle.addEventListener("click", () => {
@@ -122,6 +144,12 @@
             contacts.open = true;
         })
 
+        projects.addEventListener("click",()=>{
+            allprojects.open = true;
+            sidebar.classList.add("active");
+            sidetoggle.classList.add("active");
+        })
+        
     </script>
 
 </body>
