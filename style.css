@@ -14,6 +14,12 @@ body {
     min-height: 100vh;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
 header nav {
     display: flex;
     gap: 15px;
@@ -23,7 +29,7 @@ header nav {
     width: 100%;
     min-width: fit-content;
     align-items: center;
-    z-index: 999;
+    height: 100px;
 }
 
 
@@ -74,6 +80,9 @@ header nav {
     padding-left: 15px;
     padding-top: 50px;
     padding-right: 5px;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar details {
@@ -114,6 +123,7 @@ header nav {
     z-index: 9998;
     min-width: fit-content;
 }
+
 
 article {
     padding: 0.9rem;
@@ -184,6 +194,10 @@ footer {
     width: max-content;
 }
 
+.contacts_button:hover .contacts_button_text {
+    transform: scaleX(0.666);
+}
+
 .contacts_button:hover {
     transform: scaleX(1.5);
     box-shadow: 0 0 40px blue, 0 0 40px blue;
@@ -195,9 +209,6 @@ footer {
     transition: 0.3s;
 }
 
-.contacts_button:hover .contacts_button_text {
-    transform: scaleX(0.666);
-}
 
 #description li {
     margin: 5px 0;
@@ -206,8 +217,9 @@ footer {
 .social_media_container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 5px;
+    align-items: center;
 }
 
 .sidebar .social_media_buttons {
@@ -218,6 +230,7 @@ footer {
     text-decoration: none;
     transition: 0.3s;
     color: white;
+    white-space: nowrap;
 }
 
 .social_media_buttons:hover {
