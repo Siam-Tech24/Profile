@@ -60,17 +60,20 @@ header nav {
     min-height: 100vh;
     width: 30vw;
     min-width: fit-content;
-    transform: translateX(-100%);
-    position: absolute;
+    background: linear-gradient(to right bottom, silver, white, grey);
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    transition: 0.3s ease-out;
-    background: linear-gradient(to right bottom, silver, white, grey);
-    padding: 0.9rem;
+    padding: 15px 0px;
     box-sizing: border-box;
-    top: 0;
-    z-index: 998;
+    transform: translateX(-100%);
+    transition: 0.3s ease-out;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-right: 5px;
 }
 
 .sidebar details {
@@ -84,6 +87,7 @@ header nav {
     border-radius: 5px;
     transition: 0.5s;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .personal_projects {
@@ -105,11 +109,11 @@ header nav {
 }
 
 #sidecontainer {
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
+    position: fixed;
+    top: 75px;
+    z-index: 9998;
+    min-width: fit-content;
 }
-
 
 article {
     padding: 0.9rem;
