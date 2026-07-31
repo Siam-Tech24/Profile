@@ -210,6 +210,12 @@ footer {
 
 }
 
+.contacts_button:focus {
+    width: 150px;
+    box-shadow: 0 0 15px blue, 0 0 15px blue;
+
+}
+
 .button_container_details {
     width: 250px;
     box-sizing: border-box;
