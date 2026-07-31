@@ -182,7 +182,6 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .contacts_button {
     color: silver;
     background-color: blue;
@@ -191,27 +190,34 @@ footer {
     border-radius: 34px;
     box-shadow: 0 0 15px blue, 0 0 15px blue;
     transition: 0.3s;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     margin-bottom: 20px;
-    width: max-content;
+    width: 150px;
 }
 
-.contacts_button:hover .contacts_button_text {
-    transform: scaleX(0.666);
-}
+
 
 .contacts_button:hover {
-    transform: scaleX(1.5);
+    width: 250px;
     box-shadow: 0 0 40px blue, 0 0 40px blue;
 }
 
+.contacts_button:active {
+    width: 250px;
+    box-shadow: 0 0 40px blue, 0 0 40px blue;
 
-.contacts_button_text {
-    display: inline-block;
-    transition: 0.3s;
 }
+
+.button_container_details {
+    width: 250px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 #description li {
