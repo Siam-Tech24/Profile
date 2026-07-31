@@ -121,14 +121,14 @@
             </div>
         </footer>
     </main>
-    <script>
+        <script>
         const sidebar = document.getElementById("sidebar");
         const sidetoggle = document.getElementById("sidetoggle");
         const contacts_button = document.getElementById("contacts_button");
         const contacts = document.getElementById("contacts");
         const services = document.getElementById("services");
         const skills = document.getElementById("skills");
-        const projects = document.getElementById("projects");
+        const projects = document.getElementById("projects_button");
         const allprojects = document.getElementById("allprojects");
 
 
@@ -138,7 +138,7 @@
             services.open = false;
             contacts.open = false;
             skills.open = false;
-
+            allprojects.open = false;
 
 
         })
@@ -149,14 +149,13 @@
             contacts.open = true;
         })
 
-        projects.addEventListener("click",()=>{
+        projects.addEventListener("click", () => {
             allprojects.open = true;
             sidebar.classList.add("active");
             sidetoggle.classList.add("active");
         })
-        
-    </script>
 
+    </script>
 </body>
 
 </html>
